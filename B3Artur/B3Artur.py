@@ -12,8 +12,8 @@ def find_population_by_city(cities, populations):
     else:
         print("Linn {} ei leidnud".format(city))
 
-def display_sorted_cities_and_populations(cities, populations):
-    for city, population in sorted(zip(cities, populations)):
+def display_sorted_cities_and_populations(cities, populations):  # принимает два аргумента: cities и populations.
+    for city, population in sorted(zip(cities, populations)):   # zip-  объединяет элементы из списка
         print(city, population)
 
 def find_closest_city_by_population(cities, populations):
